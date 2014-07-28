@@ -1,0 +1,55 @@
+/*********************** Navbar **************************/
+.navbar-default {
+  background: rgba(236, 240, 241,0) !important;
+  border: none;
+  height: 70px;
+  padding-top: 20px;
+}
+.navbar a,
+.navbar-brand,
+.navbar-text {
+  color: white !important;
+  font-size: 1.5em;
+  font-weight: 100;
+}
+
+.navbar a {
+  border-bottom: 1px solid white;
+  margin: 15px 15px 0 0;
+}
+
+.navbar a:hover {
+  color: #FF0000 !important;
+  border-bottom: 1px solid #FF0000;
+}
+
+/*********************** Video **************************/
+.video-section .pattern-overlay {
+background-color: rgba(71, 71, 71, 0.59);
+height: 900px;
+}
+.video-section h1, .video-section h3{
+text-align:center;
+color:#fff;
+}
+.video-section h1{
+font-size:110px;
+font-family: 'Buenard', serif;
+font-weight:bold;
+text-transform: uppercase;
+margin: 40px auto 0px;
+text-shadow: 1px 1px 1px #000;
+-webkit-text-shadow: 1px 1px 1px #000;
+-moz-text-shadow: 1px 1px 1px #000;
+}
+.video-section h3{
+font-size: 25px;
+font-weight:lighter;
+margin: 0px auto 15px;
+}
+.video-section .buttonBar{display:none;}
+.player {font-size: 1px;}
+
+.beep {
+  margin-top: -90px;
+}
