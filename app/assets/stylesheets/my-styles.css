@@ -15,6 +15,12 @@ body {
 .lg-header {
   margin-top: 50px;
   font-size: 4em;
+  color:  #e74c3c;
+}
+
+.page-text {
+  font-weight: 100;
+  text-align: justify;
 }
 
 /*********************** Navbar **************************/
@@ -24,18 +30,20 @@ body {
   height: 70px;
   padding-top: 20px;
 }
-.navbar a,
-.navbar-brand,
-.navbar-text {
+.navbar a {
   color: white !important;
   font-size: 1.5em;
   font-weight: 300;
-}
-
-.navbar a {
-  border-bottom: 1px solid white;
   margin: 15px 15px 0 0;
   padding-left: 50px !important;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+.navbar-brand {
+  color: white !important;
+  font-size: 3em;
+  font-family: 'Cinzel', serif;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
 }
 
 .navbar a:hover {
@@ -45,7 +53,7 @@ body {
 
 /*********************** Video **************************/
 .video-section{
-background-color: rgba(71, 71, 71, 0);
+background-color: rgba(71, 71, 71, 0.5);
 height: 900px;
 }
 .video-section .buttonBar{display:none;}
@@ -81,8 +89,22 @@ height: 900px;
 
 .arrow-section {
   margin-top: 300px;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
 }
 
 #about {
   padding: 100px 0 100px 0;
+  background:#2c2c2c;
+  color: white;
+}
+
+/*********************** Media Queries **************************/
+@media (min-width: 992px) {
+  .navbar a {
+    border-bottom: 1px solid white;
+  }
+
+  .navbar a:hover {
+    border-bottom: 1px solid #e74c3c;
+  }
 }
