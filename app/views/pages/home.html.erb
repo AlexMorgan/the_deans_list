@@ -1,11 +1,23 @@
   <script src="http://pupunzi.com/mb.components/mb.YTPlayer/demo/inc/jquery.mb.YTPlayer.js"></script>
   <!--Video Section-->
+  <%= content_for :video do %>
   <div class="beep">
-    <section class="content-section video-section">
+    <section class="video-section">
       <div class="pattern-overlay">
-      <a id="bgndVideo" class="player" data-property="{videoURL:'https://www.youtube.com/watch?v=uvl5oHbSayo&index=43&list=WL',containment:'.video-section', quality:'large', autoPlay:true, mute:true}">bg</a>
+      <a id="bgndVideo" class="player" data-property="{videoURL:'https://www.youtube.com/watch?v=uvl5oHbSayo&index=43&list=WL',containment:'.video-section', quality:'large', autoPlay:true, mute:true}"></a>
       </div>
     </section>
   </div>
+  <% end %>
+
+  <div id="about" class="col-xs-12 center">
+    <h1 class="lg-header thin">The Movement</h1>
+  </div>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.video-section').css('height', screen.height - 120)
+    });
+  </script>
 
 

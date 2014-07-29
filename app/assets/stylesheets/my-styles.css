@@ -1,3 +1,19 @@
+/*********************** Helpers **************************/
+.center {
+  text-align: center;
+}
+
+/*********************** Fonts **************************/
+.thin {
+  font-weight: 100 !important;
+}
+
+.lg-header {
+  font-size: 4em;
+}
+
+/*********************** Colors **************************/
+
 /*********************** Navbar **************************/
 .navbar-default {
   background: rgba(236, 240, 241,0) !important;
@@ -10,7 +26,7 @@
 .navbar-text {
   color: white !important;
   font-size: 1.5em;
-  font-weight: 100;
+  font-weight: 300;
 }
 
 .navbar a {
@@ -25,31 +41,14 @@
 
 /*********************** Video **************************/
 .video-section .pattern-overlay {
-background-color: rgba(71, 71, 71, 0.59);
+background-color: rgba(71, 71, 71, 0);
 height: 900px;
 }
-.video-section h1, .video-section h3{
-text-align:center;
-color:#fff;
-}
-.video-section h1{
-font-size:110px;
-font-family: 'Buenard', serif;
-font-weight:bold;
-text-transform: uppercase;
-margin: 40px auto 0px;
-text-shadow: 1px 1px 1px #000;
--webkit-text-shadow: 1px 1px 1px #000;
--moz-text-shadow: 1px 1px 1px #000;
-}
-.video-section h3{
-font-size: 25px;
-font-weight:lighter;
-margin: 0px auto 15px;
-}
 .video-section .buttonBar{display:none;}
-.player {font-size: 1px;}
 
 .beep {
   margin-top: -90px;
+}
+
+.content-section {
 }
