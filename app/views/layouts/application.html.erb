@@ -25,10 +25,19 @@
           <li><a href="#about" class='nav-link'>About</a></li>
           <li><a href="#models" class='nav-link'>Models</a></li>
           <li><a href="#team" class='nav-link'>Team</a></li>
+          <% if user_signed_in? %>
+            <li><%= link_to "Logout", destroy_user_session_path, method: :delete %></li>
+          <% end %>
         </ul>
       </div><!--/.nav-collapse -->
     </div>
   </div>
+
+  <% flash.each do |name, msg| %>
+    <div class="flash center">
+        <%= content_tag(:div, msg, class: "alert alert-#{name}") %>
+    </div>
+  <% end %>
 
   <%= yield :home %>
 

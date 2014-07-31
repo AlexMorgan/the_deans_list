@@ -2,6 +2,13 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+.flash {
+  background-color: rgba(231, 76, 60, 0.5);
+  margin-top: 15px;
+  color: black;
+  font-weight: 300;
+}
+
 /*********************** Helpers **************************/
 .center {
   text-align: center;
