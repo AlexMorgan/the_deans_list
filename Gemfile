@@ -28,6 +28,8 @@ gem 'spring',        group: :development
 
 gem 'devise'
 
+gem 'paperclip', '~> 3.0'
+
 group :test, :development do
   gem 'capybara'
   gem 'pry-rails'

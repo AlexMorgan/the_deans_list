@@ -11,15 +11,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140731050906) do
+ActiveRecord::Schema.define(version: 20140802195345) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "girls", force: true do |t|
-    t.string   "first_name",  null: false
-    t.string   "last_name",   null: false
-    t.integer  "year",        null: false
+    t.string   "first_name",         null: false
+    t.string   "last_name",          null: false
+    t.integer  "year",               null: false
     t.string   "major"
     t.string   "month"
     t.text     "bio"
@@ -28,6 +28,10 @@ ActiveRecord::Schema.define(version: 20140731050906) do
     t.string   "video_url"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "image_file_name"
+    t.string   "image_content_type"
+    t.integer  "image_file_size"
+    t.datetime "image_updated_at"
   end
 
   create_table "users", force: true do |t|

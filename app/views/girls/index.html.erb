@@ -1,0 +1,13 @@
+<div class="center col-md-12">
+  <h1>Girls</h1>
+</div>
+
+<div class="row">
+  <% @girls.each do |girl| %>
+    <div class="col-sm-3">
+      <%= image_tag girl.image.url(:thumb) %>
+    </div>
+  <% end %>
+</div>
+
+<%= link_to "Add Model", new_girl_path %>
