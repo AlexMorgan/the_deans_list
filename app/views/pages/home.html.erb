@@ -32,7 +32,7 @@
   <div class="row">
     <% @girls.each do |girl| %>
       <div class="col-xs-2">
-        <a href="/girls/<%= girl.id %>" class="bwWrapper"><%= image_tag girl.image.url, class: "model"%></a>
+        <a href="/girls/<%= girl.id %>" class="bwWrapper"><%= image_tag girl.image.url, class: "model desaturate"%></a>
       </div>
     <% end %>
   </div>
@@ -53,6 +53,12 @@
         $(this).stop(true, false).animate({ 'padding-bottom': "15px" }, 200);
       });
 
+      $('img.model').hover(function(){
+        $(this).removeClass('desaturate');
+        }, function() {
+        $(this).addClass('desaturate');
+      });
+
       $('a[href^="#"]').click(function (e) {
           e.preventDefault();
 
@@ -66,21 +72,23 @@
           });
       });
 
-      $('.bwWrapper').BlackAndWhite({
-          hoverEffect : true, // default true
-          // set the path to BnWWorker.js for a superfast implementation
-          webworkerPath : false,
-          // to invert the hover effect
-          invertHoverEffect: false,
-          // this option works only on the modern browsers ( on IE lower than 9 it remains always 1)
-          intensity:1,
-          speed: { //this property could also be just speed: value for both fadeIn and fadeOut
-              fadeIn: 100, // 200ms for fadeIn animations
-              fadeOut: 500 // 800ms for fadeOut animations
-          },
-          onImageReady:function(img) {
-              // this callback gets executed anytime an image is converted
-          }
-      });
+
+
+      // $('.bwWrapper').BlackAndWhite({
+      //     hoverEffect : true, // default true
+      //     // set the path to BnWWorker.js for a superfast implementation
+      //     webworkerPath : false,
+      //     // to invert the hover effect
+      //     invertHoverEffect: false,
+      //     // this option works only on the modern browsers ( on IE lower than 9 it remains always 1)
+      //     intensity:1,
+      //     speed: { //this property could also be just speed: value for both fadeIn and fadeOut
+      //         fadeIn: 100, // 200ms for fadeIn animations
+      //         fadeOut: 500 // 800ms for fadeOut animations
+      //     },
+      //     onImageReady:function(img) {
+      //         // this callback gets executed anytime an image is converted
+      //     }
+      // });
     });
   </script>
