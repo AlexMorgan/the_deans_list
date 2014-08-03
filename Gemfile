@@ -30,6 +30,8 @@ gem 'devise'
 
 gem 'paperclip', '~> 3.0'
 
+gem 'aws-sdk', '~> 1.0'
+
 group :test, :development do
   gem 'capybara'
   gem 'pry-rails'
