@@ -1,3 +1,12 @@
+<% if @girl.errors.any? %>
+  <p> There were errors in your submission </p>
+  <ul>
+    <% @girl.errors.each do |key, val| %>
+      <li><%= key.capitalize %> <%= val %></li>
+    <% end %>
+  </ul>
+<% end %>
+
 <div>
   <%= form_for @girl do |f| %>
     <div><%= f.file_field :image %></div>
