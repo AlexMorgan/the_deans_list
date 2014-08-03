@@ -9,7 +9,7 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <% if request.original_url == "http://localhost:3000/" %>
+  <% if current_page?('/') %>
   <div class="navbar navbar-default navbar-static-top" role="navigation">
   <% else %>
   <div class="navbar navbar-inverse navbar-static-top" role="navigation">
@@ -22,7 +22,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <% if request.original_url == "http://localhost:3000/" %>
+        <% if current_page?('/') %>
           <a href="<%= root_path %>"><%= image_tag("brand-logo-shadow.png", class: "brand-logo") %></a>
         <% else %>
           <a href="<%= root_path %>"><%= image_tag("brand-logo-shadow.png", class: "xs-logo") %></a>
@@ -34,7 +34,7 @@
             <li><%= link_to "Dashboard", girls_path, class: "custom-nav-link" %></li>
             <li><%= link_to "Logout", destroy_user_session_path, method: :delete, class: 'custom-nav-link' %></li>
           <% else %>
-          <% if request.original_url == "http://localhost:3000/" %>
+          <% if current_page?('/') %>
             <li><a href="#about" class='nav-link'>About</a></li>
             <li><a href="#models" class='nav-link'>Models</a></li>
             <li><a href="#team" class='nav-link'>Team</a></li>
