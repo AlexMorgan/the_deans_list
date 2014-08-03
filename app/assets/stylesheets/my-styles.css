@@ -151,7 +151,7 @@ filter: grayscale(100%);
 }
 
 #models {
-  background: #e74c3c;
+  /*background: #e74c3c;*/
 }
 
 .logo {
