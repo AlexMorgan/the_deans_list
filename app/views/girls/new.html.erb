@@ -1,12 +1,14 @@
-<%= form_for @girl do |f| %>
-  <div><%= f.file_field :image %></div>
-  <div><%= f.text_field :first_name, autofocus: true, placeholder: "First Name" %></div>
-  <div><%= f.text_field :last_name, placeholder: "Last Name" %></div>
-  <div><%= f.text_field :year, placeholder: "Year" %></div>
-  <div><%= f.text_field :major, placeholder: "Major" %></div>
-  <div><%= f.text_area :bio, placeholder: "Biography" %></div>
-  <div><%= f.text_field :charity, placeholder: "Charity" %></div>
-  <div><%= f.text_field :charity_url, placeholder: "Link to Charity" %></div>
-  <div><%= f.text_field :video_url, placeholder: "Link to YouTube Video" %></div>
-  <div><%= f.submit "Submit" %></div>
-<% end %>
+<div>
+  <%= form_for @girl do |f| %>
+    <div><%= f.file_field :image %></div>
+    <div><%= f.text_field :first_name, autofocus: true, placeholder: "First Name" %></div>
+    <div><%= f.text_field :last_name, placeholder: "Last Name" %></div>
+    <div><%= f.text_field :year, placeholder: "Year" %></div>
+    <div><%= f.text_field :major, placeholder: "Major" %></div>
+    <div><%= f.text_area :bio, placeholder: "Biography" %></div>
+    <div><%= f.text_field :charity, placeholder: "Charity" %></div>
+    <div><%= f.text_field :charity_url, placeholder: "Link to Charity" %></div>
+    <div><%= f.text_field :video_url, placeholder: "Link to YouTube Video" %></div>
+    <div><%= f.submit "Submit" %></div>
+  <% end %>
+</div>

@@ -30,6 +30,10 @@ body {
   text-align: justify;
 }
 
+.white {
+  color: white !important;
+}
+
 /*********************** Navbar **************************/
 .navbar-default {
   background: rgba(236, 240, 241,0) !important;
@@ -37,7 +41,7 @@ body {
   height: 70px;
   padding-top: 20px;
 }
-.navbar a {
+.nav-link {
   color: white !important;
   font-size: 1.5em;
   font-weight: 300;
@@ -53,9 +57,32 @@ body {
   text-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
 }
 
-.navbar a:hover {
+.nav-link:hover {
   color: #e74c3c !important;
   border-bottom: 1px solid #e74c3c;
+}
+
+.custom-nav-link {
+  color: white !important;
+  font-size: 1.5em;
+  font-weight: 300;
+  margin: 15px 15px 0 0;
+  padding-left: 50px !important;
+}
+
+.custom-nav-link:hover {
+  color: #bdc3c7 !important;
+}
+
+.brand-logo {
+  height: 70px;
+  width: 70px;
+}
+
+.xs-logo {
+  margin-top: 12px;
+  height: 40px;
+  width: 40px;
 }
 
 /*********************** Video **************************/
@@ -105,12 +132,26 @@ height: 900px;
   color: white;
 }
 
+.bwWrapper {
+    position:relative;
+    display:block;
+}
+
 .model {
   width: 100%;
 }
 
+img.desaturate { -webkit-filter: grayscale(100%);
+-moz-filter: grayscale(100%);
+filter: grayscale(100%);
+}
+
 #models div div {
   padding: 0 !important;
+}
+
+#models {
+  background: #e74c3c;
 }
 
 .logo {
@@ -119,11 +160,11 @@ height: 900px;
 
 /*********************** Media Queries **************************/
 @media (min-width: 992px) {
-  .navbar a {
+  .nav-link {
     border-bottom: 1px solid white;
   }
 
-  .navbar a:hover {
+  .nav-link:hover {
     border-bottom: 1px solid #e74c3c;
   }
 }

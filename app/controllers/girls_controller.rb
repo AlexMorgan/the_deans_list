@@ -17,10 +17,14 @@ class GirlsController < ApplicationController
     @girl = Girl.new(girl_params)
 
     if @girl.save
-      redirect_to girls_path, notice: "#{@girl.first_name} has been added"
+      redirect_to girl_path(@girl), notice: "#{@girl.first_name} has been added"
     else
       render :new
     end
+  end
+
+  def edit
+    @girl = Girl.find(girl_params)
   end
 
   protected

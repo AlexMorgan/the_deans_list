@@ -19,7 +19,7 @@ ActiveRecord::Schema.define(version: 20140802195345) do
   create_table "girls", force: true do |t|
     t.string   "first_name",         null: false
     t.string   "last_name",          null: false
-    t.integer  "year",               null: false
+    t.string   "year",               null: false
     t.string   "major"
     t.string   "month"
     t.text     "bio"

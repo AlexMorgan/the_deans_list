@@ -1,0 +1,11 @@
+<div class="row">
+  <div class="col-md-4">
+    <%= image_tag @girl.image.url :medium %>
+  </div>
+  <div class="col-md-8">
+    <h1><%= @girl.first_name %> <%= @girl.last_name %></h1>
+    <h3><%= @girl.year %></h3>
+    <h3><%= @girl.major %></h3>
+    <h4><a href="<%= @girl.charity_url %>"><%= @girl.charity %></a></h4>
+  </div>
+</div>

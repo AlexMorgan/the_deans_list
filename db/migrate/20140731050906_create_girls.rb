@@ -3,7 +3,7 @@ class CreateGirls < ActiveRecord::Migration
     create_table :girls do |t|
       t.string :first_name, null: false
       t.string :last_name, null: false
-      t.integer :year, null: false
+      t.string :year, null: false
       t.string :major
       t.string :month
       t.text :bio
