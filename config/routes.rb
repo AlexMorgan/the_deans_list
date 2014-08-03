@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   root "pages#home"
 
   resources :girls
+  resources :contact_forms, only: [:new, :create]
 end

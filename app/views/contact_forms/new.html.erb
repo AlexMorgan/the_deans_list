@@ -1,0 +1,31 @@
+<% if @contact.errors.any? %>
+  <p> There were errors in your submission </p>
+  <ul>
+    <% @contact.errors.full_messages.each do |m| %>
+      <li><%= m %></li>
+    <% end %>
+  </ul>
+<% end %>
+
+<div class="col-md-8 col-md-offset-2 center">
+  <div class="well">
+    <h1>Contact Us</h1>
+    <%= form_for [@contact] do |f| %>
+
+      <%= f.text_field :name, placeholder: "Enter name", class: "search-form" %><br><br>
+
+      <%= f.text_field :email, placeholder: "Enter email", class: "search-form" %><br><br>
+
+      <%= f.text_field :subject, placeholder: "Enter subject", class: "search-form" %><br><br>
+
+      <%= f.text_area :message, placeholder: "Enter message", class: "search-form message-input" %><br><br>
+
+      <div><%= f.submit "Submit", class: "btn btn-primary"%></div><br><br>
+    <% end %>
+  </div>
+</div>
+
+<div class="col-md-4">
+  <%= link_to 'Back', :back %>
+</div>
+

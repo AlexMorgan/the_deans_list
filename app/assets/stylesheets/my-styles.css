@@ -168,6 +168,97 @@ filter: grayscale(100%);
   padding-top: 50px;
 }
 
+/*********************** Footer **************************/
+footer {
+  margin-top: 100px;
+  margin-bottom: -50px;
+  bottom:0;
+  height:100%;   /* Height of the footer */
+  background: #e74c3c;
+  border-bottom: 5px solid #2c3e50;
+  color: white;
+  font-weight: 100;
+}
+
+.footer-content {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  /*padding-left: 10%;*/
+}
+
+.address {
+  line-height: 50%;
+}
+
+.trans {
+  background-color: rgba(168,168,168,0.25);
+  border: none;
+  margin-bottom: 15px;
+  height: 35px;
+  width: 100%;
+  padding-left: 10px;
+  color: white;
+  font-weight: 100;
+}
+
+.trans:focus {
+  outline: 1;
+}
+
+.trans::-webkit-input-placeholder {
+  color: white;
+}
+
+.trans:-moz-placeholder { /* Firefox 18- */
+  color: white;
+}
+
+.trans::-moz-placeholder {  /* Firefox 19+ */
+  color: white;
+}
+
+.trans:-ms-input-placeholder {
+  color: white;
+}
+
+.area {
+  height: 100px;
+  width: 100%;
+  resize: none;
+}
+
+.contact-submit {
+  width: 25%;
+  margin-left: 75%;
+  height: 30px;
+}
+
+.prof-pic {
+  height: 50px;
+  border-radius: 150px;
+  margin-right: 10px;
+}
+
+.line-break {
+  color: grey;
+}
+
+.contact-icon {
+  margin-right: 10px;
+  padding-left: 2.5%;
+  height: auto;
+  width: auto;
+}
+
+.foot-link {
+  color: white;
+}
+
+.foot-link:hover {
+  text-decoration: none;
+  color: #1abc9c;
+}
+
 /*********************** Media Queries **************************/
 @media (min-width: 992px) {
   .nav-link {
