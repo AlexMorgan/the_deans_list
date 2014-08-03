@@ -174,8 +174,7 @@ footer {
   margin-bottom: -50px;
   bottom:0;
   height:100%;   /* Height of the footer */
-  background: #e74c3c;
-  border-bottom: 5px solid #2c3e50;
+  background: #c0392b;
   color: white;
   font-weight: 100;
 }
@@ -191,7 +190,7 @@ footer {
 }
 
 .trans {
-  background-color: rgba(168,168,168,0.25);
+  background-color: rgba(168,168,168,0.2);
   border: none;
   margin-bottom: 15px;
   height: 35px;
