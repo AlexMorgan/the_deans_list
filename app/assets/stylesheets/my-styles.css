@@ -139,6 +139,7 @@ height: 900px;
 
 .model {
   width: 100%;
+  height: 100%;
 }
 
 img.desaturate { -webkit-filter: grayscale(100%);
@@ -146,9 +147,14 @@ img.desaturate { -webkit-filter: grayscale(100%);
 filter: grayscale(100%);
 }
 
-#models div div {
+#models div {
   padding: 0 !important;
 }
+
+.row-pad {
+  margin-right: 0px !important;
+}
+
 
 #models {
   /*background: #e74c3c;*/
@@ -156,6 +162,10 @@ filter: grayscale(100%);
 
 .logo {
   height: 100px;
+}
+
+.img-txt {
+  padding-top: 50px;
 }
 
 /*********************** Media Queries **************************/
