@@ -83,7 +83,17 @@ Rails.application.configure do
 
   # Required for Heroku
   # Note: Set this to actual host
-  config.action_mailer.default_url_options = { :host => '#' }
+  config.action_mailer.default_url_options = { :host => ENV['HOSTNAME'] }
+
+  ActionMailer::Base.smtp_settings = {
+      :port =>           '587',
+      :address =>        'smtp.mandrillapp.com',
+      :user_name =>      ENV['MANDRILL_USERNAME'],
+      :password =>       ENV['MANDRILL_APIKEY'],
+      :domain =>         'heroku.com',
+      :authentication => :plain
+  }
+  ActionMailer::Base.delivery_method = :smtp
 
   # configuration for uploading images to Amazon S3 in production
   config.paperclip_defaults = {
