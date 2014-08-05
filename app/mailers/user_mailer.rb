@@ -7,6 +7,6 @@ class UserMailer < ActionMailer::Base
     @subject = subject
     @message = message
 
-    mail(to: 'alexmorgan.am@gmail.com', subject: "#{@name} has contacted you")
+    mail(to: 'deanslistproject@gmail.com', subject: "#{@name} has contacted you")
   end
 end
