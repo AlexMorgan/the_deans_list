@@ -12,7 +12,7 @@
     <div><%= f.file_field :image %></div>
     <div><%= f.text_field :first_name, autofocus: true, placeholder: "First Name" %></div>
     <div><%= f.text_field :last_name, placeholder: "Last Name" %></div>
-    <div><%= f.text_field :year, placeholder: "Year" %></div>
+    <div><%= f.select :year, Girl.year, prompt: "Select Year" %></div>
     <div><%= f.text_field :major, placeholder: "Major" %></div>
     <div><%= f.text_area :bio, placeholder: "Biography" %></div>
     <div><%= f.text_field :charity, placeholder: "Charity" %></div>

@@ -4,4 +4,9 @@ class Girl < ActiveRecord::Base
   validates :year, presence: true
 
   has_attached_file :image, :styles => { :medium => "300x300>", :thumb => "100x100>" }
+
+  def self.year
+    %w(Freshman Sophomore Junior Senior)
+  end
+
 end
