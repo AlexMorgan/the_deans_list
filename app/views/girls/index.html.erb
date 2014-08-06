@@ -6,6 +6,7 @@
   <% @girls.each do |girl| %>
     <div class="col-sm-2">
       <%= image_tag girl.image.url, class: "model" %>
+      <div><p><%= girl.first_name %> <%= girl.last_name %></p></div>
       <div><%= link_to "Edit", edit_girl_path(girl) %></div>
       <div><%= link_to "Delete", girl, method: :delete, data: {confirm: "Are you sure you would like to remove #{girl.first_name}"} %></div>
     </div>
