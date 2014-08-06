@@ -31,7 +31,11 @@
         <% end %>
         </div>
         <div class="visible-xs">
-          <a class="navbar-brand" href="<%= root_path %>">DL</a>
+          <% if current_page?('/')%>
+            <a class="navbar-brand" href="<%= root_path %>">DL</a>
+          <% else %>
+            <a class="navbar-brand" href="<%= root_path %>"><span class="white">DL</span></a>
+          <% end %>
         </div>
       </div>
       <div class="collapse navbar-collapse">
