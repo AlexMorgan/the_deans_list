@@ -55,7 +55,7 @@ body {
 }
 
 .navbar-brand {
-  color: white !important;
+  color: #2c2c2c !important;
   font-size: 3em;
   font-family: 'Cinzel', serif;
   text-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
