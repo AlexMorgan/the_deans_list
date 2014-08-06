@@ -7,7 +7,7 @@ class ChargesController < ApplicationController
     @amount = 1500
 
     customer = Stripe::Customer.create(
-      :email => 'example@stripe.com',
+      :email => params[:stripeEmail],
       :card  => params[:stripeToken]
     )
 
@@ -17,10 +17,6 @@ class ChargesController < ApplicationController
       :description => 'Calendar Purchased',
       :currency    => 'usd'
     )
-
-    # custome redirect - Get rid of this if you want to touch the charges#create page
-    flash[:notice] = "Your order is being processed"
-    redirect_to root_path
 
   rescue Stripe::CardError => e
     flash[:error] = e.message
