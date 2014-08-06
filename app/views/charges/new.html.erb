@@ -1,0 +1,25 @@
+<div class="row">
+  <div class="col-md-6">
+    <%= image_tag('dlp_cover.jpg', class: "cal-cover") %>
+  </div>
+
+  <div class="col-md-4">
+    <div class="well center">
+      <%= form_tag charges_path do %>
+        <article>
+          <label class="amount">
+            <span>Amount: $15.00</span>
+          </label>
+        </article>
+
+        <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
+                data-description="Purchase Calendar"
+                data-amount="1500"
+                data-image="/assets/mini-logo.png">
+
+        </script>
+      <% end %>
+    </div>
+  </div>
+</div>

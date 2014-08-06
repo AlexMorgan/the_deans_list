@@ -259,6 +259,12 @@ footer {
   color: #1abc9c;
 }
 
+/*********************** Stripe Page **************************/
+.cal-cover {
+  height: auto;
+  width: 100%;
+}
+
 /*********************** Media Queries **************************/
 @media (min-width: 992px) {
   .nav-link {
