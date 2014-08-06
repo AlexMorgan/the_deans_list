@@ -34,6 +34,10 @@ body {
   color: white !important;
 }
 
+.red {
+  color: #e74c3c !important;
+}
+
 /*********************** Navbar **************************/
 .navbar-default {
   background: rgba(236, 240, 241,0) !important;
