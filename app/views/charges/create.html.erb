@@ -1,4 +1,4 @@
 <div class="center">
-  <h2>Thanks for your support! Your order of $<strong><%= @amount.to_s[0..-3] %>.00</strong> is being processed.</h2>
+  <h2>Thanks for your support! Your order of $<strong><%= @amount.to_f/100 %></strong> is being processed.</h2>
   <%= link_to "Return Home", root_path, class: "btn btn-success" %>
 </div>

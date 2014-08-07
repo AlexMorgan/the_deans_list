@@ -16,9 +16,12 @@
 
         <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
                 data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
-                data-description="Purchase Calendar"
+                data-description="Calendar Purchase"
+                data-name="The Dean's List"
                 data-amount="1799"
                 data-image="/assets/mini-logo.png"
+                data-allow-remember-me="false"
+                data-label="Order Now"
                 data-address>
         </script>
       <% end %>

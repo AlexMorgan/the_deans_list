@@ -21,7 +21,7 @@
   <div class="container">
     <div class="col-xs-12 center">
       <h1 class="lg-header thin">The Movement</h1>
-      <h3 class="page-text">" Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillu dolore eu fugiat. "</h3>
+      <h3 class="page-text support-info">" Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillu dolore eu fugiat. "</h3>
       <h3 class="pull-right page-text"> - The Dean</h3>
     </div>
   </div>
@@ -37,6 +37,40 @@
         </a>
       </div>
     <% end %>
+  </div>
+</div>
+
+<div id="support">
+  <div class="container">
+  <div class="row">
+    <div class="col-md-7">
+      <h1 class="lg-header thin">Support the Movement</h1>
+      <h3 class="thin support-info">Order your very own copy of The Dean's List Calendar: Edition #1 and support the cause! A portion of all proceeds from sales will go to the philanthropy of choice for each model during the month of their shoot.</h3>
+      <%= form_tag charges_path do %>
+        <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
+                data-description="Calendar: Edition #1"
+                data-name="The Dean's List"
+                data-amount="1799"
+                data-image="/assets/mini-logo.png"
+                data-allow-remember-me="false"
+                data-label="Order Now"
+                data-address>
+        </script>
+      <% end %>
+    </div>
+    <div class="custom-well col-md-4 pull-right center">
+          <article>
+            <%= image_tag('dlp_cover.jpg', class: "cal-cover") %>
+            <label class="amount">
+              <div><span class="amount-info med">Amount: $17.99</span></div>
+              <span class="med">$15.00 + 2.99 (Shipping)</span>
+            </label>
+          </article>
+
+
+    </div>
+  </div>
   </div>
 </div>
 
