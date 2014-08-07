@@ -43,7 +43,7 @@
 <div id="support">
   <div class="container">
   <div class="row">
-    <div class="col-md-7">
+    <div class="col-sm-7">
       <h1 class="lg-header thin">Support the Movement</h1>
       <h3 class="thin support-info">Order your very own copy of The Dean's List Calendar: Edition #1 and support the cause! A portion of all proceeds from sales will go to the philanthropy of choice for each model during the month of their shoot.</h3>
       <%= form_tag charges_path do %>
@@ -59,16 +59,13 @@
         </script>
       <% end %>
     </div>
-    <div class="custom-well col-md-4 pull-right center">
+    <div class="col-sm-4 pull-right center">
           <article>
-            <%= image_tag('dlp_cover.jpg', class: "cal-cover") %>
-            <label class="amount">
-              <div><span class="amount-info med">Amount: $17.99</span></div>
-              <span class="med">$15.00 + 2.99 (Shipping)</span>
-            </label>
+            <div class="image">
+              <%= image_tag('dlp_cover.jpg', class: "cal-cover") %>
+              <h3 class="image-text">Amount: $17.99<br><span class="med small">$15.00 + 2.99 (Shipping)</span></h3>
+            </div>
           </article>
-
-
     </div>
   </div>
   </div>
