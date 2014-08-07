@@ -7,15 +7,16 @@ class ChargesController < ApplicationController
     @amount = 1799
 
     customer = Stripe::Customer.create(
-      :email => params[:stripeEmail],
-      :card  => params[:stripeToken]
+      email: params[:stripeEmail],
+      card: params[:stripeToken]
     )
 
     charge = Stripe::Charge.create(
-      :customer    => customer.id,
-      :amount      => @amount,
-      :description => 'Calendar Purchased',
-      :currency    => 'usd'
+      customer: customer.id,
+      amount: @amount,
+      description: 'Calendar Purchased',
+      currency: 'usd',
+      receipt_email: customer.email
     )
 
   rescue Stripe::CardError => e

@@ -42,32 +42,33 @@
 
 <div id="support">
   <div class="container">
-  <div class="row">
-    <div class="col-sm-7">
-      <h1 class="lg-header thin">Support the Movement</h1>
-      <h3 class="thin support-info">Order your very own copy of The Dean's List Calendar: Edition #1 and support the cause! A portion of all proceeds from sales will go to the philanthropy of choice for each model during the month of their shoot.</h3>
-      <%= form_tag charges_path do %>
-        <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-                data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
-                data-description="Calendar: Edition #1"
-                data-name="The Dean's List"
-                data-amount="1799"
-                data-image="/assets/mini-logo.png"
-                data-allow-remember-me="false"
-                data-label="Order Now"
-                data-address>
-        </script>
-      <% end %>
+    <div class="row">
+      <div class="col-sm-7">
+        <h1 class="lg-header thin">Support the Movement</h1>
+        <h3 class="thin support-info">Order your very own copy of The Dean's List Calendar: Edition #1 and support the cause! A portion of all proceeds from sales will go to the philanthropy of choice for each model during the month of their shoot.</h3>
+        <%= form_tag charges_path do %>
+          <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                  data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
+                  data-description="Calendar: Edition #1"
+                  data-name="The Dean's List"
+                  data-amount="1799"
+                  data-image="/assets/mini-logo.png"
+                  data-allow-remember-me="false"
+                  data-label="Order Now"
+                  data-address>
+          </script>
+        <% end %>
+      </div>
+
+      <div class="col-sm-4 pull-right center">
+        <article>
+          <div class="image">
+            <%= image_tag('dlp_cover.jpg', class: "cal-cover") %>
+            <h3 class="image-text">Amount: $17.99<br><span class="med small">$15.00 + 2.99 (Shipping)</span></h3>
+          </div>
+        </article>
+      </div>
     </div>
-    <div class="col-sm-4 pull-right center">
-          <article>
-            <div class="image">
-              <%= image_tag('dlp_cover.jpg', class: "cal-cover") %>
-              <h3 class="image-text">Amount: $17.99<br><span class="med small">$15.00 + 2.99 (Shipping)</span></h3>
-            </div>
-          </article>
-    </div>
-  </div>
   </div>
 </div>
 
