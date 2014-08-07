@@ -19,6 +19,10 @@ body {
   font-weight: 100 !important;
 }
 
+.med {
+  font-weight: 300 !important;
+}
+
 .lg-header {
   margin-top: 50px;
   font-size: 4em;
@@ -262,7 +266,13 @@ footer {
 /*********************** Stripe Page **************************/
 .cal-cover {
   height: auto;
-  width: 100%;
+  width: 75%;
+  box-shadow: 5px 5px 15px rgba(168,168,168,0.5);
+  border-radius: 2px;
+}
+
+.amount-info {
+  font-size: 2em;
 }
 
 /*********************** Media Queries **************************/
