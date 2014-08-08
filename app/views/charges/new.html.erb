@@ -1,0 +1,30 @@
+<div class="row">
+  <div class="col-md-5 col-md-offset-1">
+
+  </div>
+
+  <div class="col-md-4">
+    <div class="well center">
+      <%= form_tag charges_path do %>
+        <article>
+          <%= image_tag('dlp_cover.jpg', class: "cal-cover") %>
+          <label class="amount">
+            <div><span class="amount-info med">Amount: $17.99</span></div>
+            <span class="med">$15.00 + 2.99 (Shipping)</span>
+          </label>
+        </article>
+
+        <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
+                data-description="Calendar Purchase"
+                data-name="The Dean's List"
+                data-amount="1799"
+                data-image="/assets/mini-logo.png"
+                data-allow-remember-me="false"
+                data-label="Order Now"
+                data-address>
+        </script>
+      <% end %>
+    </div>
+  </div>
+</div>
