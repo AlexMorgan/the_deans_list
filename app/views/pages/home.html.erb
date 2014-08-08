@@ -31,7 +31,7 @@
   <div class="col-md-12 center"><h1 class="lg-header thin">Meet the Models</h1></div>
   <div class="row row-pad">
     <% @girls.each do |girl| %>
-      <div class="col-sm-2">
+      <div class="col-sm-2 col-xs-4">
         <a href="/girls/<%= girl.id %>" class="bwWrapper">
           <%= image_tag girl.image.url, class: "model desaturate"%>
         </a>
