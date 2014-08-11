@@ -28,7 +28,7 @@
 </div>
 
 <div id="models">
-  <div class="col-md-12 center"><h1 class="lg-header thin">Meet the Class of 2015</h1></div>
+  <div class="col-md-12 center"><h1 class="lg-header thin model-pad">The Class of 2015</h1></div>
   <div class="row row-pad">
     <% @girls.each do |girl| %>
       <div class="col-sm-2 col-xs-4">
@@ -45,7 +45,7 @@
     <div class="row">
       <div class="col-sm-7">
         <h1 class="lg-header thin">Support the Cause</h1>
-        <h3 class="thin support-info">Order your very own copy of The Dean's List Calendar: Edition #1 and support the cause! A portion of all proceeds from sales will go to the philanthropy of choice for each model during the month of their shoot.</h3>
+        <h3 class="thin support-info">Order your very own copy of The Dean's List Calendar, Issue #1 and support The Cause. We will donate 25% of our profits to the chosen charities. Only 1,500 calendars were published; get yours before they're gone!</h3>
         <%= form_tag charges_path do %>
           <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
                   data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
@@ -108,8 +108,8 @@
           <div class="col-md-4">
             <h3 class="foot-heading">Get Connected</h3><hr>
             <div>
-              <p><%= image_tag("twitter3.png", class: "contact-icon") %><a href="https://twitter.com/deanslistprojec" class="foot-link">Twitter</a></p>
-              <p><%= image_tag("facebook3.png", class: "contact-icon") %><a href="https://www.facebook.com/pages/The-Deans-List/423241127810992?ref_type=bookmark" class="foot-link">Facebook</a></p>
+              <p><%= image_tag("twitter3.png", class: "contact-icon") %><a href="https://twitter.com/deanslistprojec" class="foot-link" target="_blank">Twitter</a></p>
+              <p><%= image_tag("facebook3.png", class: "contact-icon") %><a href="https://www.facebook.com/pages/The-Deans-List/423241127810992?ref_type=bookmark" class="foot-link" target="_blank">Facebook</a></p>
             </div>
           </div>
         </div>

@@ -214,6 +214,11 @@ filter: grayscale(100%);
   cursor: pointer;
 }
 
+.model-pad {
+  margin-bottom: 30px;
+  margin-top: 30px !important;
+}
+
 /*********************** Footer **************************/
 footer {
   margin-top: 0px;
