@@ -208,6 +208,12 @@ filter: grayscale(100%);
    left: 0;
    width: 100%;
 }
+
+#disclaim:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 /*********************** Footer **************************/
 footer {
   margin-top: 0px;
@@ -302,9 +308,9 @@ footer {
 .cal-cover {
   height: auto;
   width: 100%;
-  border-radius: 2px;
+  border-radius: 2px;/*
   box-shadow: 0px 0px 15px rgba(0,0,0,0.2);
-  border-bottom: 80px solid white;
+  border-bottom: 80px solid white;*/
   /*box-shadow: 0px 5px 10px rgba(168,168,168,0.5);*/
   /*border-bottom: 1px solid #bdc3c7;*/
   /*border-right: 1px solid #bdc3c7;*/

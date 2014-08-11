@@ -49,7 +49,7 @@
         <%= form_tag charges_path do %>
           <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
                   data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
-                  data-description="Calendar: Edition #1"
+                  data-description="+2.99 Shipping"
                   data-name="The Dean's List"
                   data-amount="1799"
                   data-image="/images/mini-logo.png"
@@ -63,8 +63,8 @@
       <div class="col-sm-4 pull-right center">
         <article>
           <div class="image">
-            <%= image_tag('dlp_cover.jpg', class: "cal-cover") %>
-            <h3 class="image-text">Amount: $15<br></h3>
+            <%= image_tag('cover_banner.png', class: "cal-cover") %>
+            <!-- <h3 class="image-text">Amount: $15<br></h3> -->
           </div>
         </article>
       </div>
@@ -79,6 +79,10 @@
           <div class="col-md-12">
             <h1 class="large">CONTACT US</h1>
             <p>Would you like to leave us any feedback?</p>
+            <div>
+              <p class="white" id="disclaim">*Disclaimer</p>
+              <p id="disclaim-text" hidden>The Dean's List at JMU 2014-2015 Calendar is not a JMU publication, and is in no way endorsed by JMU. Our corporate name, The Dean's List, Inc., has no relationship to the "Dean's List" honor, which is granted to JMU students for their academic achievements.  The inclusion of any woman in our calendar does not imply that she is on the JMU Dean's List.</p>
+            </div>
           </div>
         </div>
         <div class="row">
@@ -145,6 +149,10 @@
           }, 750, 'swing', function () {
               window.location.hash = target;
           });
+      });
+
+      $('#disclaim').click(function(){
+        $('#disclaim-text').toggle('medium');
       });
 
 
