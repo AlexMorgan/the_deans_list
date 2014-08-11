@@ -7,4 +7,4 @@ Gems Used:
 - Devise
 - Paperclip
 
-![ScreenShot](https://cloud.githubusercontent.com/assets/5783423/3872658/9452222a-2120-11e4-8bc0-f333abf76530.png)
+![pagedesign](https://cloud.githubusercontent.com/assets/5783423/3882222/1a263a70-2195-11e4-817d-2f2b8afaaf32.png)
