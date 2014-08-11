@@ -4,8 +4,8 @@ The Deans List Project is my very first freelance project that I worked on for a
 
 Gems Used:
 
--Stripe
--Devise
--Paperclip
+- Stripe
+- Devise
+- Paperclip
 
 ![ScreenShot](https://cloud.githubusercontent.com/assets/5783423/3872658/9452222a-2120-11e4-8bc0-f333abf76530.png)
