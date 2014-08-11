@@ -122,7 +122,8 @@
 
   <script type="text/javascript">
     $(document).ready(function(){
-      $('.video-section').css('height', screen.height*.87);
+      windowHeight = $(window).height()
+      $('.video-section').css('height', windowHeight);
       $('.video-content').css('padding-top', screen.height/3.5);
       $('.arrow-section').css('margin-top', screen.height*.30);
       $('#about').css('padding-top', screen.height/4);
