@@ -401,23 +401,55 @@ form select {
 .wallpaper {
   background-image: image-url('wallpaper.jpg');
   background-position: center;
-  height: 225px;
+  height: 325px;
   background-size: 100%;
-  margin-top: -20px;
+  margin-top: -125px;
   background-repeat: no-repeat;
 }
 
 .girl-profile {
-  margin-top: -125px;
+  margin-top: -175px;
+  text-align: center;
 }
 
 .profile-pic {
   border: 5px solid white !important;
-  height: 250px;
+  height: 150px;
   width: auto;
 }
 
+.banner-font {
+  margin-bottom: -20px;
+}
+
 /*********************** Media Queries **************************/
+@media (min-width: 768px) {
+  .banner-font {
+    color: white;
+    margin-bottom: 0px;
+  }
+
+  .bio {
+    line-height: 125%;
+  }
+
+  .wallpaper {
+    height: 225px;
+    margin-top: -20px;
+  }
+
+  .girl-profile {
+    margin-top: -125px;
+    text-align: left;
+  }
+
+  .profile-pic {
+    border: 5px solid white !important;
+    height: 250px;
+    width: auto;
+  }
+}
+
 @media (min-width: 992px) {
   .nav-link {
     border-bottom: 1px solid white;

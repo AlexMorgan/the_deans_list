@@ -7,10 +7,12 @@
   </div>
 
   <div class="col-md-9 col-sm-7">
-    <h1 class="white med"><%= @girl.first_name %> <%= @girl.last_name %></h1>
-    <h3 class="white thin"><%= @girl.year %></h3>
-    <h3 class="med line-style"><%= @girl.major %> Major</h3>
-    <h3 class="med"><a href="<%= @girl.charity_url %>"  target="_blank"><%= @girl.charity %></a></h3>
+    <div class="banner-font">
+    <h1 class="med"><%= @girl.first_name %> <%= @girl.last_name %></h1>
+    <h3 class="thin"><%= @girl.year %></h3>
+    </div>
+    <h3 class="thin line-style"><%= @girl.major %> Major</h3>
+    <h3 class="thin"><a href="<%= @girl.charity_url %>"  target="_blank"><%= @girl.charity %></a></h3>
     <% if @girl.paypal_id.present? %>
       <div>
         <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
@@ -24,7 +26,8 @@
   </div>
 </div>
 
-<div class="col-md-12">
-  <h3 class="bio med"><%= @girl.bio %></h4>
+<div class="row">
+  <div class="col-md-12">
+    <h3 class="bio thin"><%= @girl.bio %></h4>
+  </div>
 </div>
-
