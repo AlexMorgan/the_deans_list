@@ -380,6 +380,10 @@ form select {
   border-bottom: 3px solid #f39c12;
 }
 
+.btn-custom:hover {
+  border: none !important;
+}
+
 /*********************** Media Queries **************************/
 @media (min-width: 992px) {
   .nav-link {
