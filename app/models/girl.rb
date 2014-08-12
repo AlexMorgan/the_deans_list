@@ -2,6 +2,10 @@ class Girl < ActiveRecord::Base
   extend FriendlyId
   friendly_id :first_last_name, use: :slugged
 
+  def should_generate_new_friendly_id?
+    :first_last_name_changed?
+  end
+
   validates :first_name, presence: true
   validates :last_name, presence: true
   validates :year, presence: true

@@ -24,11 +24,11 @@ class GirlsController < ApplicationController
   end
 
   def edit
-    @girl = Girl.find(params[:id])
+    @girl = Girl.friendly.find(params[:id])
   end
 
   def update
-    @girl = Girl.find(params[:id])
+    @girl = Girl.friendly.find(params[:id])
 
     if @girl.update(girl_params)
       redirect_to girl_path(@girl), notice: "#{@girl.first_name} #{@girl.last_name} has been updated"
@@ -38,7 +38,7 @@ class GirlsController < ApplicationController
   end
 
   def destroy
-    @girl = Girl.find(params[:id]).destroy
+    @girl = Girl.friendly.find(params[:id]).destroy
 
     flash[:notice] = "#{@girl.first_name} #{@girl.last_name} has been removed"
     redirect_to girls_path
