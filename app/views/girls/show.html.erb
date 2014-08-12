@@ -1,17 +1,16 @@
 <%= content_for :home do %>
-  <div class="wallpaper">
-
-  </div>
+  <div class="wallpaper"></div>
 <% end %>
 <div class="row girl-profile">
-  <div class="col-md-4">
+  <div class="col-md-3 col-sm-5">
     <%= image_tag @girl.image.url, class: "profile-pic" %>
   </div>
-  <div class="col-md-8">
+
+  <div class="col-md-9 col-sm-7">
     <h1 class="white med"><%= @girl.first_name %> <%= @girl.last_name %></h1>
     <h3 class="white thin"><%= @girl.year %></h3>
-    <h3><%= @girl.major %></h3>
-    <h4><a href="<%= @girl.charity_url %>"  target="_blank"><%= @girl.charity %></a></h4>
+    <h3 class="med line-style"><%= @girl.major %> Major</h3>
+    <h3 class="med"><a href="<%= @girl.charity_url %>"  target="_blank"><%= @girl.charity %></a></h3>
     <% if @girl.paypal_id.present? %>
       <div>
         <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
@@ -22,6 +21,10 @@
         </form>
       </div>
     <% end %>
-    <h4><%= @girl.bio %></h4>
   </div>
 </div>
+
+<div class="col-md-12">
+  <h3 class="bio med"><%= @girl.bio %></h4>
+</div>
+

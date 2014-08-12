@@ -46,6 +46,20 @@ body {
   color: #e74c3c !important;
 }
 
+.justify {
+  text-align: justify;
+}
+
+.bio {
+  text-align: justify;
+  margin-top: 30px;
+}
+
+.line-style {
+  padding-top: 10px;
+  margin-bottom: -15px;
+}
+
 /*********************** Navbar **************************/
 .navbar-default {
   background: rgba(236, 240, 241,0) !important;
@@ -387,19 +401,19 @@ form select {
 .wallpaper {
   background-image: image-url('wallpaper.jpg');
   background-position: center;
-  height: 250px;
+  height: 225px;
   background-size: 100%;
   margin-top: -20px;
   background-repeat: no-repeat;
 }
 
 .girl-profile {
-  margin-top: -150px;
+  margin-top: -125px;
 }
 
 .profile-pic {
   border: 5px solid white !important;
-  height: 300px;
+  height: 250px;
   width: auto;
 }
 
