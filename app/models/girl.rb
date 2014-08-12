@@ -1,6 +1,6 @@
 class Girl < ActiveRecord::Base
   extend FriendlyId
-  friendly_id :first_last_name, use: :slugged
+  friendly_id :first_last_name, use: [:slugged, :history]
 
   def should_generate_new_friendly_id?
     :first_last_name_changed?

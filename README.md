@@ -6,5 +6,6 @@ Gems Used:
 - Stripe
 - Devise
 - Paperclip
+- FriendlyID
 
 ![pagedesign](https://cloud.githubusercontent.com/assets/5783423/3882222/1a263a70-2195-11e4-817d-2f2b8afaaf32.png)

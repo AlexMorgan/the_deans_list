@@ -7,6 +7,9 @@ class GirlsController < ApplicationController
 
   def show
     @girl = Girl.friendly.find(params[:id])
+    if request.path != girl_path(@girl)
+      redirect_to @girl, status: :moved_permanently
+    end
   end
 
   def new
