@@ -2,7 +2,7 @@ class GirlsController < ApplicationController
   before_action :authenticate_user!, except: :show
 
   def index
-    @girls = Girl.all
+    @girls = Girl.all.order(created_at: :asc)
   end
 
   def show
