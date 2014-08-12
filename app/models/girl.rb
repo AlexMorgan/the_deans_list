@@ -1,4 +1,7 @@
 class Girl < ActiveRecord::Base
+  extend FriendlyId
+  friendly_id :first_last_name, use: :slugged
+
   validates :first_name, presence: true
   validates :last_name, presence: true
   validates :year, presence: true
@@ -9,4 +12,9 @@ class Girl < ActiveRecord::Base
     %w(Freshman Sophomore Junior Senior)
   end
 
+  protected
+
+  def first_last_name
+    first_name + "-" + last_name
+  end
 end

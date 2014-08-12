@@ -32,6 +32,8 @@ gem 'paperclip', '~> 3.0'
 
 gem 'aws-sdk', '~> 1.0'
 
+gem 'friendly_id', '~> 5.0.0'
+
 gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
 
 group :test, :development do

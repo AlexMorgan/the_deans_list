@@ -6,7 +6,7 @@ class GirlsController < ApplicationController
   end
 
   def show
-    @girl = Girl.find(params[:id])
+    @girl = Girl.friendly.find(params[:id])
   end
 
   def new

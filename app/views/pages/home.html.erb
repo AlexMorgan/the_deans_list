@@ -32,7 +32,7 @@
   <div class="row row-pad">
     <% @girls.each do |girl| %>
       <div class="col-sm-2 col-xs-4">
-        <a href="/girls/<%= girl.id %>" class="bwWrapper">
+        <a href="<%= girl_path(girl) %>" class="bwWrapper">
           <%= image_tag girl.image.url, class: "model desaturate"%>
         </a>
       </div>
