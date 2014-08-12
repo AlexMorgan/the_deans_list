@@ -55,6 +55,7 @@ class GirlsController < ApplicationController
       :charity,
       :charity_url,
       :video_url,
-      :image)
+      :image,
+      :paypal_id)
   end
 end

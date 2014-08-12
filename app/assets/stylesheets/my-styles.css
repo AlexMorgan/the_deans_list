@@ -369,6 +369,16 @@ form select {
   height: 80px;
 }
 
+/*********************** Girls#Show **************************/
+.btn-custom {
+  background: #f1c40f;
+  color: #34495e;
+  border: none;
+  height: 30px;
+  width: 75px;
+  border-bottom: 2px solid #f39c12;
+}
+
 /*********************** Media Queries **************************/
 @media (min-width: 992px) {
   .nav-link {
