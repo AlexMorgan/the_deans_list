@@ -384,6 +384,25 @@ form select {
   border: none !important;
 }
 
+.wallpaper {
+  background-image: image-url('wallpaper.jpg');
+  background-position: center;
+  height: 250px;
+  background-size: 100%;
+  margin-top: -20px;
+  background-repeat: no-repeat;
+}
+
+.girl-profile {
+  margin-top: -150px;
+}
+
+.profile-pic {
+  border: 5px solid white !important;
+  height: 300px;
+  width: auto;
+}
+
 /*********************** Media Queries **************************/
 @media (min-width: 992px) {
   .nav-link {

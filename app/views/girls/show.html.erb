@@ -1,10 +1,15 @@
-<div class="row">
+<%= content_for :home do %>
+  <div class="wallpaper">
+
+  </div>
+<% end %>
+<div class="row girl-profile">
   <div class="col-md-4">
-    <%= image_tag @girl.image.url :medium %>
+    <%= image_tag @girl.image.url, class: "profile-pic" %>
   </div>
   <div class="col-md-8">
-    <h1><%= @girl.first_name %> <%= @girl.last_name %></h1>
-    <h3><%= @girl.year %></h3>
+    <h1 class="white med"><%= @girl.first_name %> <%= @girl.last_name %></h1>
+    <h3 class="white thin"><%= @girl.year %></h3>
     <h3><%= @girl.major %></h3>
     <h4><a href="<%= @girl.charity_url %>"  target="_blank"><%= @girl.charity %></a></h4>
     <% if @girl.paypal_id.present? %>
