@@ -376,7 +376,8 @@ form select {
   border: none;
   height: 30px;
   width: 75px;
-  border-bottom: 2px solid #f39c12;
+  border-radius: 2px;
+  border-bottom: 3px solid #f39c12;
 }
 
 /*********************** Media Queries **************************/
