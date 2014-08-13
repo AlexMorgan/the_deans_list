@@ -4,6 +4,7 @@ Rails.application.routes.draw do
 
   resources :girls
   resources :contact_forms, only: [:new, :create]
+  get '/paypal' => 'pages#paypal'
   # For Stripe CC Processing
   resources :charges, except: :new
 end
