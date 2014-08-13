@@ -254,6 +254,10 @@ filter: grayscale(100%);
   text-align: center;
 }
 
+.learn:hover {
+  background: rgba(192, 57, 43,1.0);
+}
+
 .model-name {
   font-size: 1em;
 }
