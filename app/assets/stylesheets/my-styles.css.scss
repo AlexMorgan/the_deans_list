@@ -232,6 +232,35 @@ filter: grayscale(100%);
   margin-bottom: 30px;
   margin-top: 30px !important;
 }
+.contenthover {
+  text-align: center;
+  margin-top: 40%;
+}
+.contenthover, .contenthover h3, .contenthover a {
+  color: white;
+  font-weight: 300;
+  /*text-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);*/
+}
+
+.learn {
+  background: #e74c3c;
+  border-radius: 150px;
+  width: 25%;
+  padding: 10px 0 10px 0;
+  font-size: .75em;
+  margin-left: 40%;
+  color: white;
+  margin-top: 20%;
+  text-align: center;
+}
+
+.model-name {
+  font-size: 1em;
+}
+
+.model-image a {
+  text-decoration: none;
+}
 
 /*********************** Footer **************************/
 footer {
@@ -452,6 +481,15 @@ form select {
     height: 250px;
     width: auto;
   }
+
+  .model-name {
+    font-size: 2em;
+  }
+
+  .learn {
+    width: 20%;
+  }
+
 }
 
 @media (min-width: 992px) {

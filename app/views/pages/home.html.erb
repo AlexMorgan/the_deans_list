@@ -1,6 +1,6 @@
   <script src="http://pupunzi.com/mb.components/mb.YTPlayer/demo/inc/jquery.mb.YTPlayer.js"></script>
   <!--Video Section-->
-  <%= content_for :home do %>
+<%= content_for :home do %>
   <div class="beep hidden-xs">
     <section class="video-section">
       <div class="video-content">
@@ -31,10 +31,15 @@
   <div class="col-md-12 center"><h1 class="lg-header thin model-pad">The Class of <%= @year %></h1></div>
   <div class="row row-pad">
     <% @girls.each do |girl| %>
-      <div class="col-sm-2 col-xs-4">
-        <a href="<%= girl_path(girl) %>" class="bwWrapper">
-          <%= image_tag girl.image.url, class: "model desaturate"%>
-        </a>
+      <div class="col-sm-2 col-xs-4 model-image">
+        <%= image_tag girl.image.url, class: "model desaturate "%>
+        <div class="contenthover">
+          <h3 class="model-name"><%= girl.first_name %> <%= girl.last_name %></h3>
+          <a href="<%= girl_path(girl) %>">
+            <p class="learn hidden-xs">Learn <br> More</p>
+            <p class="learn">Meet</p>
+          </a>
+        </div>
       </div>
     <% end %>
   </div>
@@ -135,11 +140,7 @@
         $(this).stop(true, false).animate({ 'padding-bottom': "15px" }, 200);
       });
 
-      $('img.model').hover(function(){
-        $(this).removeClass('desaturate');
-        }, function() {
-        $(this).addClass('desaturate');
-      });
+
 
       $('a[href^="#"]').click(function (e) {
           e.preventDefault();
@@ -158,23 +159,21 @@
         $('#disclaim-text').toggle('medium');
       });
 
+      // Code for contentHover.js
+      $(function(){
+        $('.model').contenthover({
+            effect:'slide',
+            slide_direction:'right',
+            slide_speed:600,
+            overlay_background:'#000',
+            overlay_opacity:0.6
+        });
 
-
-      // $('.bwWrapper').BlackAndWhite({
-      //     hoverEffect : true, // default true
-      //     // set the path to BnWWorker.js for a superfast implementation
-      //     webworkerPath : false,
-      //     // to invert the hover effect
-      //     invertHoverEffect: false,
-      //     // this option works only on the modern browsers ( on IE lower than 9 it remains always 1)
-      //     intensity:1,
-      //     speed: { //this property could also be just speed: value for both fadeIn and fadeOut
-      //         fadeIn: 100, // 200ms for fadeIn animations
-      //         fadeOut: 500 // 800ms for fadeOut animations
-      //     },
-      //     onImageReady:function(img) {
-      //         // this callback gets executed anytime an image is converted
-      //     }
-      // });
+        $('.model-image').hover(function(){
+          $(this).find('.model').removeClass('desaturate');
+          }, function() {
+          $(this).find('.model').addClass('desaturate');
+        });
+      });
     });
   </script>
