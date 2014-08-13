@@ -45,7 +45,7 @@
     <div class="row">
       <div class="col-sm-7">
         <h1 class="lg-header thin">Support the Cause</h1>
-        <h3 class="thin support-info">Order your very own copy of The Dean's List Calendar, Issue #1 and support The Cause. We will donate 25% of our profits to the chosen charities. Only 1,500 calendars were published; get yours before they're gone!</h3>
+        <h3 class="thin support-info justify">Order your very own copy of The Dean's List Calendar, Issue #1 and support The Cause. We will donate 25% of our profits to the chosen charities. Only 1,500 calendars were published; get yours before they're gone!</h3>
         <%= form_tag charges_path do %>
           <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
                   data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
