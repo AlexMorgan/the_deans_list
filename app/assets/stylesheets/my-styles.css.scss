@@ -233,6 +233,18 @@ filter: grayscale(100%);
   margin-top: 30px !important;
 }
 
+/*********************** Countdown **************************/
+
+.countdown {
+  margin-left: 8%;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.countdown-body {
+  margin-top: 15%;
+}
+
 /*********************** Footer **************************/
 footer {
   margin-top: 0px;
@@ -452,6 +464,10 @@ form select {
     height: 250px;
     width: auto;
   }
+
+  .countdown {
+    margin-left: 5%;
+  }
 }
 
 @media (min-width: 992px) {
@@ -461,5 +477,9 @@ form select {
 
   .nav-link:hover {
     border-bottom: 1px solid #e74c3c;
+  }
+
+  .countdown {
+    margin-left: 22%;
   }
 }
