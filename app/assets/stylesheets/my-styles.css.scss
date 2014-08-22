@@ -1,5 +1,6 @@
 body {
   font-family: 'Roboto', sans-serif;
+  margin-top: -20px;
 }
 
 .flash {
@@ -65,7 +66,7 @@ body {
   background: rgba(236, 240, 241,0) !important;
   border: none;
   height: 70px;
-  padding-top: 20px;
+  padding-top: 30px;
 }
 .nav-link {
   color: white !important;
@@ -114,7 +115,11 @@ body {
 
 /*********************** Video **************************/
 .video-section{
-background-color: rgba(71, 71, 71, 0.5);
+/*background-color: rgba(71, 71, 71, 0.5);*/
+background-image: image-url('wallpaper.jpg');
+background-size: cover;
+margin-top: -20px !important;
+margin-top: -10px;
 height: 900px;
 }
 .video-section .buttonBar{display:none;}
