@@ -13,6 +13,5 @@
 //= require jquery
 //= require jquery_ujs
 //= require bootstrap
-//= require flipclock
 //= require jquery.BlackAndWhite
 //= require_tree .
