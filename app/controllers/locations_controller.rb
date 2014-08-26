@@ -13,6 +13,7 @@ class LocationsController < ApplicationController
     if @location.save
         redirect_to girls_path, notice: "@location.name has been added as a vendor"
     else
+      render :new
     end
   end
 
