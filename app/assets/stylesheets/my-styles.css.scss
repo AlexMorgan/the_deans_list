@@ -238,6 +238,15 @@ filter: grayscale(100%);
   margin-top: 30px !important;
 }
 
+#map_canvas {
+  width: 500px;
+  height: 400px;
+}
+
+#locations {
+  padding: 50px 0 50px 0;
+}
+
 /*********************** Countdown **************************/
 
 .countdown {

@@ -1,4 +1,5 @@
   <script src="http://pupunzi.com/mb.components/mb.YTPlayer/demo/inc/jquery.mb.YTPlayer.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js"></script>
   <!--Video Section-->
   <%= content_for :home do %>
  <div class="beep hidden-sm">
@@ -74,6 +75,20 @@
   </div>
 </div>
 
+<div id="locations">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <div id="map_canvas"></div>
+      </div>
+      <div class="col-sm-6">
+        <h1 class="lg-header thin">Pick Up a Copy</h1>
+        <h3 class="thin support-info justify">If you're at James Madison University make sure to stop by the following locations and grab a copy before they run out!</h3>
+      </div>
+    </div>
+  </div>
+</div>
+
   <footer>
     <div class="footer-content">
       <div class="container">
@@ -131,6 +146,19 @@
       $('#about').css('padding-top', screen.height/4);
       $('#about').css('padding-bottom', screen.height/3);
 
+      // Google maps
+      function initialize() {
+        var map_canvas = document.getElementById('map_canvas');
+        var map_options = {
+          center: new google.maps.LatLng(44.5403, -78.5463),
+          zoom: 8,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(map_canvas, map_options)
+      }
+
+      google.maps.event.addDomListener(window, 'load', initialize);
+
       $('a.nav-link').hover(function(){
         $(this).stop(true, false).animate({ 'padding-bottom': "20px" }, 200);
         }, function() {
@@ -159,8 +187,6 @@
       $('#disclaim').click(function(){
         $('#disclaim-text').toggle('medium');
       });
-
-
 
       // $('.bwWrapper').BlackAndWhite({
       //     hoverEffect : true, // default true

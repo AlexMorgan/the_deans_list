@@ -28,6 +28,8 @@ gem 'spring',        group: :development
 
 gem 'devise'
 
+gem 'geocoder'
+
 gem 'paperclip', '~> 3.0'
 
 gem 'aws-sdk', '~> 1.0'
