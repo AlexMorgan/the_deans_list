@@ -44,25 +44,6 @@
   </div>
 </div>
 
-<div id="locations">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-6">
-        <div id="map"></div>
-      </div>
-      <div class="col-sm-6">
-        <h1 class="lg-header thin">Pick Up a Copy</h1>
-        <h3 class="thin support-info justify">If you're at James Madison University make sure to stop by the following locations and grab a copy before they run out!</h3>
-        <ul>
-          <% @locations.each do |l| %>
-            <li><h4 class="med"><%= l.name %></h4></li>
-          <% end %>
-        </ul>
-      </div>
-    </div>
-  </div>
-</div>
-
 <div id="support">
   <div class="container">
     <div class="row">
@@ -90,6 +71,25 @@
             <!-- <h3 class="image-text">Amount: $15<br></h3> -->
           </div>
         </article>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="locations">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <div id="map"></div>
+      </div>
+      <div class="col-sm-6">
+        <h1 class="lg-header thin">Pick Up a Copy</h1>
+        <h3 class="thin support-info justify">If you're at James Madison University make sure to stop by the following locations and grab a copy before they run out!</h3>
+        <ul>
+          <% @locations.each do |l| %>
+            <li><h4 class="med"><%= l.name %></h4></li>
+          <% end %>
+        </ul>
       </div>
     </div>
   </div>
