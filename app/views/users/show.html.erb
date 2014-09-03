@@ -4,5 +4,5 @@
   <h2><%= @user.full_name %></h2>
 <% end %>
 <h3>Position: <%= @user.role.capitalize %></h3>
-<%= link_to "Account Settings", edit_user_registration_path %>
+<%= link_to "Account Settings", edit_user_registration_path %><br>
 <%= link_to "Personal Settings", edit_user_path(current_user) %>
