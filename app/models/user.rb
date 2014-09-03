@@ -6,4 +6,14 @@ class User < ActiveRecord::Base
 
   has_many :girls
 
+  def profile_complete
+    if first_name.present? && last_name.present?
+      return true
+    end
+  end
+
+  def full_name
+    "#{first_name} #{last_name}"
+  end
+
 end
