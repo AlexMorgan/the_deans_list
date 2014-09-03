@@ -5,6 +5,7 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
 
   has_many :girls
+  has_many :sales
 
   def profile_complete
     if first_name.present? && last_name.present?
