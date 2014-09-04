@@ -3,7 +3,7 @@ class Sale < ActiveRecord::Base
 
   belongs_to :user
 
-  before_save :format_date
+  # before_save :format_date
 
   def self.buyer_gender
     %w(Male Female)
@@ -13,9 +13,8 @@ class Sale < ActiveRecord::Base
     %w(Online Square Cash/Check)
   end
 
-  def format_date
-    date = self.date.split('/')
-    date = 'date[2]-date[0]-date[1]'
-  end
+  # def format_date
+  #   'date(1i)-date(2i)-date(3i)'
+  # end
 
 end

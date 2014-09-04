@@ -46,7 +46,7 @@ class SalesController < ApplicationController
   private
 
   def sale_params
-    params.require(:sale).permit(:quantity, :recipient, :date, :source, :gender).merge(user: current_user)
+    params.require(:sale).permit(:quantity, :recipient, :date, :source, :gender, :amount_paid).merge(user: current_user)
   end
 end
 

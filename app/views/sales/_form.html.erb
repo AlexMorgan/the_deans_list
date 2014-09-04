@@ -11,11 +11,8 @@
   <%= form_for @sale do |f| %>
     <%= f.text_field :quantity, autofocus: true, placeholder: "Enter quantity sold", class: "girls-input" %>
     <%= f.text_field :recipient, placeholder: "Enter name of buyer", class: "girls-input" %>
-    <div class="row">
-      <div class="col-md-4">
-        <%= f.date_select :date, placeholder: "mm/dd/yyyy" %>
-      </div>
-    </div>
+    <%= f.text_field :amount_paid, placeholder: "Enter the amount paid", class: "girls-input" %>
+    <%= f.date_select :date, placeholder: "mm/dd/yyyy" %>
     <%= f.select :gender, Sale.buyer_gender, prompt: "Select gender sold to" %>
     <%= f.select :source, Sale.source_of_sale, prompt: "Select form of sale" %>
     <%= f.submit "Submit", class: "btn submit-btn" %>
