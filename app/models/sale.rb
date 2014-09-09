@@ -13,8 +13,8 @@ class Sale < ActiveRecord::Base
     %w(Online Square Cash/Check)
   end
 
-  # def format_date
-  #   'date(1i)-date(2i)-date(3i)'
-  # end
+  def
+  end
+
 
 end

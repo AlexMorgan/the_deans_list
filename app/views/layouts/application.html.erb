@@ -42,7 +42,7 @@
       <div class="collapse navbar-collapse">
         <ul class="nav navbar-nav navbar-right">
           <% if user_signed_in? %>
-            <li><%= link_to "Dashboard", girls_path, class: "custom-nav-link" %></li>
+            <li><%= link_to "Dashboard", dashboard_path, class: "custom-nav-link" %></li>
             <li><%= link_to "Profile", user_path(current_user), class: "custom-nav-link" %></li>
             <li><%= link_to "Logout", destroy_user_session_path, method: :delete, class: 'custom-nav-link' %></li>
           <% else %>

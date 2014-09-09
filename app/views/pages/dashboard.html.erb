@@ -1,0 +1,18 @@
+
+<%= content_for :home do %>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-3 col-md-2 sidebar">
+        <ul class="nav nav-sidebar">
+          <li><%= link_to "View Vendors", locations_path %></li>
+          <li><%= link_to "View Models", girls_path %></li>
+        </ul>
+      </div>
+
+      <div class="col-sm-9 col-md-10">
+        <h1>Dashboard</h1>
+      </div>
+    </div>
+  </div>
+
+<% end %>

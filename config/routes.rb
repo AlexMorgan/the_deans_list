@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   resources :locations
   resources :contact_forms, only: [:new, :create]
   get '/paypal' => 'pages#paypal'
+  get '/dashboard' => 'pages#dashboard'
   # For Stripe CC Processing
   resources :charges, except: :new
 end

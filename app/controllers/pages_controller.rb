@@ -1,4 +1,5 @@
 class PagesController < ApplicationController
+  before_action :authenticate_user!, only: :dashboard
   def home
     @girls = Girl.all.order(created_at: :asc).limit(12)
     @contact = ContactForm.new
@@ -14,5 +15,9 @@ class PagesController < ApplicationController
       #   height: 25
       #   })
     end
+  end
+
+  def dashboard
+
   end
 end
